@@ -1,0 +1,33 @@
+{
+    "os": "Windows-10-10.0.19043-SP0",
+    "python": "3.10.8",
+    "heartbeatAt": "2022-10-24T22:26:21.509259",
+    "startedAt": "2022-10-24T22:26:20.143261",
+    "docker": null,
+    "gpu": "GeForce GT 720M",
+    "gpu_count": 1,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [
+        "--batch_size=32",
+        "--decay=1e-05",
+        "--dropout=0.4",
+        "--epochs=10",
+        "--hidden_layer_size=256",
+        "--layer_1_size=16",
+        "--layer_2_size=128",
+        "--learn_rate=0.001"
+    ],
+    "state": "running",
+    "program": "C:\\Users\\David\\Documents\\AI-Assignment 2\\CNN.py",
+    "codePath": "CNN.py",
+    "git": {
+        "remote": "https://github.com/davidPLCourt/AI-Assignment-2.git",
+        "commit": "8d59919439d90e0399fcdc88897c044267b24d09"
+    },
+    "email": "crtdav015@myuct.ac.za",
+    "root": "C:/Users/David/Documents/AI-Assignment 2",
+    "host": "DESKTOP-3OH45MM",
+    "username": "David",
+    "executable": "C:\\Users\\David\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\python.exe"
+}

@@ -1,0 +1,216 @@
+(39209, 32, 32, 3) (39209,)
+X_train.shape (27446, 32, 32, 3)
+X_valid.shape (11763, 32, 32, 3)
+y_train.shape (27446,)
+y_valid.shape (11763,)
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ conv2d (Conv2D)             (None, 30, 30, 16)        448
+ max_pooling2d (MaxPooling2D  (None, 15, 15, 16)       0
+ )
+ batch_normalization (BatchN  (None, 15, 15, 16)       64
+ ormalization)
+ conv2d_1 (Conv2D)           (None, 13, 13, 128)       18560
+ max_pooling2d_1 (MaxPooling  (None, 6, 6, 128)        0
+ 2D)
+ batch_normalization_1 (Batc  (None, 6, 6, 128)        512
+ hNormalization)
+ flatten (Flatten)           (None, 4608)              0
+ dense (Dense)               (None, 256)               1179904
+ batch_normalization_2 (Batc  (None, 256)              1024
+ hNormalization)
+ dropout (Dropout)           (None, 256)               0
+ dense_1 (Dense)             (None, 43)                11051
+=================================================================
+Total params: 1,211,563
+Trainable params: 1,210,763
+Non-trainable params: 800
+_________________________________________________________________
+None
+Epoch 1/10
+  3/858 [..............................] - ETA: 32s - loss: 4.6469 - accuracy: 0.1042
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+858/858 [==============================] - ETA: 0s - loss: 0.4927 - accuracy: 0.8711
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+858/858 [==============================] - 44s 51ms/step - loss: 0.4927 - accuracy: 0.8711 - val_loss: 0.0680 - val_accuracy: 0.9816
+Epoch 2/10
+
+
+
+
+
+
+
+
+
+
+
+
+
+858/858 [==============================] - ETA: 0s - loss: 0.0604 - accuracy: 0.9850
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+858/858 [==============================] - 46s 54ms/step - loss: 0.0604 - accuracy: 0.9850 - val_loss: 0.0501 - val_accuracy: 0.9861
+Epoch 3/10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+858/858 [==============================] - ETA: 0s - loss: 0.0376 - accuracy: 0.9901
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+
+858/858 [==============================] - 46s 53ms/step - loss: 0.0376 - accuracy: 0.9901 - val_loss: 0.0416 - val_accuracy: 0.9889
+Epoch 4/10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+857/858 [============================>.] - ETA: 0s - loss: 0.0323 - accuracy: 0.9906
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+858/858 [==============================] - 45s 53ms/step - loss: 0.0322 - accuracy: 0.9906 - val_loss: 0.0391 - val_accuracy: 0.9885
+Epoch 5/10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+858/858 [==============================] - ETA: 0s - loss: 0.0256 - accuracy: 0.9928
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+858/858 [==============================] - 46s 54ms/step - loss: 0.0256 - accuracy: 0.9928 - val_loss: 0.0330 - val_accuracy: 0.9891
+Epoch 6/10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+857/858 [============================>.] - ETA: 0s - loss: 0.0229 - accuracy: 0.9934
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+858/858 [==============================] - 44s 51ms/step - loss: 0.0229 - accuracy: 0.9934 - val_loss: 0.0276 - val_accuracy: 0.9925
+Epoch 7/10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+857/858 [============================>.] - ETA: 0s - loss: 0.0221 - accuracy: 0.9926
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+858/858 [==============================] - 45s 52ms/step - loss: 0.0221 - accuracy: 0.9926 - val_loss: 0.0261 - val_accuracy: 0.9924
+Epoch 8/10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+858/858 [==============================] - ETA: 0s - loss: 0.0172 - accuracy: 0.9946
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+858/858 [==============================] - 45s 52ms/step - loss: 0.0172 - accuracy: 0.9946 - val_loss: 0.0246 - val_accuracy: 0.9929
+Epoch 9/10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+857/858 [============================>.] - ETA: 0s - loss: 0.0211 - accuracy: 0.9935
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+858/858 [==============================] - 44s 51ms/step - loss: 0.0211 - accuracy: 0.9935 - val_loss: 0.0234 - val_accuracy: 0.9937
+Epoch 10/10
+
+
+
+
+
+
+
+
+
+
+
+
+
+857/858 [============================>.] - ETA: 0s - loss: 0.0153 - accuracy: 0.9958
+WARNING:absl:Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 2 of 2). These functions will not be directly callable after loading.
+
+858/858 [==============================] - 44s 51ms/step - loss: 0.0153 - accuracy: 0.9958 - val_loss: 0.0165 - val_accuracy: 0.9957

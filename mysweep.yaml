@@ -1,0 +1,28 @@
+program: CNN.py
+method: random
+metric:
+  goal: minimize
+  name: val_loss
+parameters:
+
+  layer_1_size:
+    values: [16, 32]
+  layer_2_size:
+    values: [64, 128]
+  hidden_layer_size:
+    values: [256, 512]
+  batch_size:
+    values: [32, 64]
+  dropout:
+    values: [0.2, 0.4, 0.6]
+  learn_rate:
+    values: [0.001, 0.01, 0.003]
+  decay:
+    values: [1e-5, 1e-6]
+  epochs:
+    value: 10
+early_terminate:
+  type: hyperband
+  s: 2
+  eta: 3
+  max_iter: 27
